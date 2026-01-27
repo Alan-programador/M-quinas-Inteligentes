@@ -9,14 +9,54 @@ h1{
 	margin: 10px 0;
 	font-size: 2.5rem;
 }
-.info{
-	font-size: 1.5rem;
-	width: 35%;
-	text-align: justify;
-	margin: auto;
+h1, h2, h3, h4, h5, h6{
+	width: 70%;
+	margin: 10px auto;
+	font-family: Sans-Serif;
+	border-bottom: 2px solid black;
+}
+p{
+	font-family: monospace;
 }
 body{
 	background-color: rgb(255, 209, 250);
 }
+section{
+	border-bottom: 3px solid grey;
+}
+.info{
+	font-size: 1.5rem;
+	width: 60%;
+	text-align: justify;
+	margin: auto;
+	line-height: 3ch;
+}
+#main, #panel_izquierdo, #panel_derecho{
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	min-height: 100vh;
+}
 
+#panel_izquierdo, #panel_derecho{
+	width: 20%;
+	position: fixed;
+	top: 0;
+	overflow: scroll;
+}
 
+#panel_izquierdo{
+	left: 0;
+}
+#panel_derecho{
+	right: 0;
+}
+#main{
+	width: 60%;
+	margin: auto;
+}
+
+#img_pres{
+	width: 80%;
+	margin: auto;
+	display: block;
+}
