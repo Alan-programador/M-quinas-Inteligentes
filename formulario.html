@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  	<head>
+    		<meta charset="UTF-8">
+    		<title>Contactame</title>
+		<link rel="icon" href="icono.png">
+    		<link rel="stylesheet" href="formulario.css">
+    		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 	</head>
+ 	<body>
+		<a href="index.html">Volver</a>
+		<div id="form">
+			<form action="index.html" method="get">
+				<div id="cont"><h1>Contactame</h1></div>
+				<div id="email_cont">
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" required autofocus placeholder="ejemplo@ejemplo.com">
+				</div>
+				<div id="saber_cont">
+					<label for="saber">Que quieres aprender</label>
+					<input id="saber" name="saber" type="text" required placeholder="algoritmos, conceptos, etc.">
+				</div>
+				<fieldset id="genero_cont">
+					<legend>Genero</legend>
+					<label for="mujer" class="no">
+						Mujer
+						<input type="radio" value="mujer" name="genero" id="mujer" required>
+					</label>
+					<label for="hombre" class="no">
+						Hombre
+						<input type="radio" value="hombre" name="genero" id="hombre" required>
+					</label>
+				</fieldset>
+				<div id="button"><button>Enviar</button></div>
+			</form>
+		</div>
+ 	</body>
+</html>

@@ -8,31 +8,66 @@ h1{
 	font-size: 2.5rem;
 }
 h1, h2, h3, h4, h5, h6{
-	margin: 10px 0;
 	text-align: center;
 	width: 70%;
 	margin: 10px auto;
+	margin-top: 0;
 	font-family: Sans-Serif;
 	border-bottom: 2px solid black;
+	
+}
+img{
+	border: 2px solid black;
+}
+h4{
+	border-bottom-color: white;
 }
 p{
 	font-family: monospace;
 }
-body{
-	background-color: rgb(255, 209, 250);
+img{
+	margin-bottom: 20px;
 }
 section{
 	border-bottom: 3px solid grey;
+	margin-bottom: 30px;
+}
+#panel_izquierdo, #panel_derecho{
+	color: white;
+	
 }
 .info{
 	font-size: 1.5rem;
-	width: 60%;
+	width: 80%;
 	text-align: justify;
 	margin: auto;
 	line-height: 3ch;
+	background-color: white;
+	border: 3px solid grey;
+	border-radius: 3%;
+	box-shadow: 0 4px 8px grey;
+	padding: 5px;
+}
+.pan{
+	color: white;
+}
+.li_pan{
+	line-height: 600%;
+}
+.panel_p{
+	width: 90%;
+	font-size: 1rem;
+	margin: auto;
+	text-align: justify;
+}
+.panel{
+	list-style-position: inside;
+	color: white;
+	padding-left: 10px;
+	font-size: 1.3rem;
 }
 #main, #panel_izquierdo, #panel_derecho{
-	border-left: 2px solid black;
+	
 	border-right: 2px solid black;
 	min-height: 100vh;
 }
@@ -41,7 +76,8 @@ section{
 	width: 20%;
 	position: fixed;
 	top: 0;
-	overflow: scroll;
+	background-color: rgb(0, 89, 73);
+	height: 100vh;
 }
 
 #panel_izquierdo{
@@ -51,11 +87,28 @@ section{
 	right: 0;
 }
 #main{
-	width: 60%;
-	margin: auto;
+	width: 80%;
+	margin-right: 20%;
+	background-color: rgb(204, 255, 245);
+}
+#animacion{
+	margin-top: 15px;
+	position: relative;
+	width: 100%;
+}
+#luz{
+	width: 7%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	box-shadow: 5px 5px 10px blue;
+	position: absolute;
+	top: 13%;
+	left: 15%;
+	background-color: blue;
+	animation: red  5s ease infinite;
 }
 #presentacion_java{
-	width: 80%;
+	width: 60%;
 	margin: auto;
 	aspect-ratio: 3/2;
 	position: relative;
@@ -63,10 +116,14 @@ section{
 #img_pres{
 	width: 100%;
 	display: block;
-	position: static
+	position: static;
+	border: 0px;
 }
 #img_press:hover{
 	position: relative;
+}
+#red{
+	width: 100%;
 }
 #tapar{
 	width: 75.5%;
@@ -77,4 +134,82 @@ section{
 	position: absolute;
 	opacity: 1;
 	transition: opacity 0.5s ease;
+}
+#video{
+	width: 80%;
+	margin: 20px auto;
+	display: block;
+}
+#comparacion{
+	width: 80%;
+	margin: 15px auto;
+	display: block;
+}
+#juego{
+	width: 70%;
+	display: block;
+	margin: 20px auto;
+}
+#cont{
+	margin-bottom: 0;
+}
+@keyframes red{
+	0% {tranform: translateX(0);}
+	33.33% {transform: translateX(285%);}
+	66.66% {transform: translate(570%, 100%);}
+	100% {transform: translate(855%, 240%);}
+}
+
+@media(max-width: 1021px){
+	.info{
+		font-size: 0.8rem;
+	}
+	#panel_derecho{
+		position: static;
+		border-bottom: 3px solid grey;
+		padding-bottom: 15px;
+		margin-bottom: 20px;
+		width: 100%;
+		height: fit-content;
+		background-color: rgb(204, 255, 245);
+		border-left: 0px;
+		border-right: 0px;
+		min-height: 0px;
+	}
+	.panel_p{
+		font-size: 0.8rem;
+		width: 80%;
+		text-align: justify;
+		margin: auto;
+		line-height: 3ch;
+		background-color: white;
+		border: 3px solid grey;
+		border-radius: 3%;
+		box-shadow: 0 4px 8px grey;
+		padding: 5px;
+		color: black;
+		
+	}
+	h1{
+		font-size: 1.7rem;
+	}
+	ul{
+		margin-top: 15px;
+	}
+	#main{
+		width: 100%;
+	}
+	h4{
+		font-size: 1.5rem;
+		color: black;
+		border-color: black;
+	}
+	.li_pan{
+		color: blue;
+		line-height: 150%;
+	}
+	.pan{
+		color: blue;
+	}
+	
 }
